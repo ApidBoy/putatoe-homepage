@@ -1,0 +1,260 @@
+
+        * {
+            outline: none;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ::-webkit-scrollbar {
+            background: transparent;
+            width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #419ea6;
+        }
+        #main-container {
+            width: 500px;
+            background-color: #f5f5f5;
+            height: 95vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            box-shadow: 0 0 50px #888;
+        }
+        header {
+            background-color: #419ea6;
+            color: white;
+            height: 130px;
+            padding-top: 15px;
+            padding-left: 5px;
+        }
+        #locationIcon, #notificationIcon, #shopCart {
+            font-size: 30px;
+            /* display: none; */
+        }
+        #locationIcon {
+            left: 10px;
+        }
+        #notificationIcon {
+            right: 60px;
+        }
+        #shopCart {
+            right: 15px;
+        }
+
+        #locationInput {
+            width: 75%;
+            color: white;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 20px;
+            font-size: 14px;
+            padding: 5px;
+            padding-left: 10px;
+            font-weight: bold;
+            position: relative;
+            top: -10px;
+        }
+        #search {
+            position: relative;
+            top: 10px;
+        }
+        #searchBox {
+            font-size: 20px;
+            width: 84%;
+            border-radius: 10px;
+            border: 0px;
+            padding: 10px;
+            padding-left: 60px;
+            margin-left: 20px;
+        }
+        #searchIcon {
+            font-size: 40px;
+            position: absolute;
+            left: 30px;
+            top: 5px;
+            color: #419ea6;
+        }
+        #voiceButton {
+            font-size: 40px;
+            position: absolute;
+            right: 15px;
+            top: 7px;
+        }
+        #carousel {
+            margin-top: 20px;
+        }
+        #carouselImages {
+            width: 400px;
+        }
+        #services {
+            background-color: #fff;
+            position: relative;
+            top: 20px;
+            left: 25px;
+            width: 90%;
+            /* box-shadow: 0 0 5px #888; */
+            border-radius: 10px;
+            padding-top: 37px;
+            padding-bottom: -30px;
+            /* padding-left: 30px; */
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            grid-template-rows: 120px 120px 120px;
+        }
+        #service {
+            margin-left: 25px;
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: .2s;
+        }
+        #service > img {
+            width: 40px;
+        }
+        #service:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        #serviceText {
+            color: #419ea6;
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #bottomNavBar {
+            box-shadow: 0 0 5px #dddddd;
+            width: 500px;
+            height: 60px;
+            position: fixed;
+            bottom: 23px;
+            display: grid;
+            grid-template-columns:  18% 18% 18% 18% 18%;
+            background-color: white;
+            justify-content: center;
+            border-bottom-left-radius: 30px;
+        }
+        #navIcon {
+            width: 25px;
+        }
+        #navText {
+            font-size: 14px;
+            color: #419ea6;
+        }
+        #navItem {
+            text-decoration: none;
+            /* margin-left: 1000px; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* justify-content: center; */
+            transition: .2s;
+            margin-top: 10px;
+        }
+        #navItem:hover {
+            transform: scale(1.1);
+        }
+        #putatoeIcon {
+            margin-top: -7px;
+            width: 50px;
+            background: #419ea6;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #popular {
+            height: 65px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            text-align: center;
+            color: #419ea6;
+            background-color: #daedee;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 15px;
+        }
+        @media only screen and (max-width: 500px) {
+            #main-container {
+                height: 100vh;
+                width: 100vw;
+                border-radius: 0px;
+            }
+            #bottomNavBar {
+                bottom: 0px;
+                border-radius: 0px;
+
+            }
+        }
+        @media only screen and (max-width: 470px) {
+            #bottomNavBar {
+                margin-left: -3%;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            #bottomNavBar {
+                margin-left: -5%;
+            }
+        }
+        @media only screen and (max-width: 430px) {
+            #bottomNavBar {
+                margin-left: -7.5%;
+            }
+            #locationInput {
+                width: 70%;
+            }
+            #searchBox {
+                margin-left: 10px;
+            }
+            #searchIcon {
+                left: 15px;
+            }
+            #voiceButton {
+                right: 10px;
+            }
+            #services {
+                grid-template-columns: 25% 25% 25% 25%;
+                left: 14px;
+                width: 94%;
+            }
+            #service > img {
+                width: 30px;
+            }
+            #service {
+                margin-left: 5px;
+            }
+        }
+        @media only screen and (max-width: 410px) {
+            #bottomNavBar {
+            grid-template-columns:  15% 15% 15% 15% 15%;
+                margin-left: -10%;
+            }
+        }
+        @media only screen and (max-width: 390px) {
+            #bottomNavBar {
+                margin-left: -14%;
+            }
+            #services {
+                grid-template-columns: 24% 23% 23% 23%;
+                left: 14px;
+                width: 94%;
+            }
+            #serviceText {
+                font-size: 11px;
+            }
+        }
+        @media only screen and (max-width: 370px) {
+            #bottomNavBar {
+                margin-left: -17%;
+            }
+            #service > img {
+                width: 30px;
+            }
+        }
